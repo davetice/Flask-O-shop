@@ -1,0 +1,1489 @@
+.shop,
+.shop * {
+  box-sizing: border-box;
+}
+.shop {
+  background: #ffffff;
+  height: 3320px;
+  position: relative;
+  overflow: hidden;
+}
+.group-5 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-2 {
+  background: #d4d4d4;
+  width: 1440px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.group-216 {
+  width: 578.72px;
+  height: 25px;
+  position: static;
+}
+.group-2 {
+  width: 578.72px;
+  height: 25px;
+  position: static;
+}
+.group-215 {
+  width: 578.72px;
+  height: 25px;
+  position: static;
+}
+.home {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 435px;
+  top: 37px;
+  width: 53.27px;
+}
+.shop2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 571.5px;
+  top: 37px;
+  width: 46.61px;
+}
+.about {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 701.35px;
+  top: 37px;
+  width: 54.38px;
+}
+.contact {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 838.96px;
+  top: 37px;
+  width: 73.25px;
+}
+.tools {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 966px;
+  top: 38px;
+  width: 47.72px;
+}
+.group-1 {
+  width: 247px;
+  height: 28px;
+  position: absolute;
+  left: 1093px;
+  top: 36px;
+  overflow: visible;
+}
+.group-78 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-1 {
+  width: 1440px;
+  height: 316px;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  filter: blur(3px);
+  object-fit: cover;
+}
+.group-55 {
+  width: 124px;
+  height: 72px;
+  position: static;
+}
+.shop3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  left: 658px;
+  top: 221px;
+}
+.group-56 {
+  width: 121px;
+  height: 24px;
+  position: static;
+}
+.home2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 660px;
+  top: 295px;
+}
+.shop4 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Light", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  position: absolute;
+  left: 740px;
+  top: 295px;
+}
+.dashicons-arrow-down-alt-2 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 714px;
+  top: 317px;
+  transform: translate(0px, -20px);
+  overflow: visible;
+}
+.group-63 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-20 {
+  background: #d4d4d4;
+  width: 1440px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top: 463px;
+}
+.group-57 {
+  width: 85px;
+  height: 30px;
+  position: static;
+}
+.filter {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 135px;
+  top: 498px;
+}
+.system-uicons-filtering {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 98px;
+  top: 500px;
+  overflow: visible;
+}
+.bi-view-list {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 258px;
+  top: 501px;
+  overflow: visible;
+}
+.ci-grid-big-round {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 206px;
+  top: 499px;
+  overflow: visible;
+}
+.group-62 {
+  width: 237px;
+  height: 37px;
+  position: static;
+}
+.line-5 {
+  border-style: solid;
+  border-color: #9f9f9f;
+  border-width: 2px 0 0 0;
+  width: 37px;
+  height: 0px;
+  position: absolute;
+  left: 312px;
+  top: 494px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.showing-1-16-of-32-results {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 346px;
+  top: 501px;
+}
+.group-60 {
+  width: 126px;
+  height: 55px;
+  position: static;
+}
+.show {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 897px;
+  top: 497px;
+}
+.group-58 {
+  width: 55px;
+  height: 55px;
+  position: static;
+}
+.rectangle-22 {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: 968px;
+  top: 485px;
+}
+._16 {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 986px;
+  top: 497px;
+}
+.group-61 {
+  width: 288px;
+  height: 55px;
+  position: static;
+}
+.short-by {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1052px;
+  top: 497px;
+}
+.group-59 {
+  width: 188px;
+  height: 55px;
+  position: static;
+}
+.rectangle-21 {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 188px;
+  height: 55px;
+  position: absolute;
+  left: 1152px;
+  top: 485px;
+}
+.default {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1182px;
+  top: 497px;
+}
+.group-79 {
+  position: absolute;
+  inset: 0;
+}
+.group-83 {
+  width: 1440px;
+  height: 1808px;
+  position: static;
+}
+.rectangle-6 {
+  background: #ffffff;
+  width: 1440px;
+  height: 777px;
+  position: absolute;
+  left: 0px;
+  top: 563px;
+}
+.group-77 {
+  width: 1285px;
+  height: 1797px;
+  position: static;
+}
+.group-205 {
+  width: 1265px;
+  height: 391px;
+  position: static;
+}
+.group-200 {
+  width: 1265px;
+  height: 391px;
+  position: static;
+}
+.group-201 {
+  width: 287px;
+  height: 371px;
+  position: static;
+}
+.group-64 {
+  width: 287px;
+  height: 371px;
+  position: static;
+}
+.group-199 {
+  width: 287px;
+  height: 371px;
+  position: static;
+}
+.group-18 {
+  width: 287px;
+  height: 371px;
+  position: static;
+}
+.mask-group {
+  width: 287px;
+  height: 287px;
+  position: static;
+}
+.rectangle-7 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 119px;
+  top: 594px;
+}
+.trenton-modular-sofa-3-1 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 109px;
+  top: 641px;
+  object-fit: cover;
+}
+.group-11 {
+  width: 191px;
+  height: 84px;
+  position: static;
+}
+.max-verstappen-red-bull-racing {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 136px;
+  top: 881px;
+}
+._25-000-000-00 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 135px;
+  top: 929px;
+}
+.group-202 {
+  width: 287px;
+  height: 371px;
+  position: static;
+}
+.rectangle-72 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 1097px;
+  top: 574px;
+}
+.trenton-modular-sofa-3-12 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 1087px;
+  top: 621px;
+  object-fit: cover;
+}
+.group-112 {
+  width: 156px;
+  height: 84px;
+  position: static;
+}
+.oscar-piastri {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 1114px;
+  top: 861px;
+}
+._500-000-00 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 1113px;
+  top: 909px;
+}
+.group-203 {
+  width: 287px;
+  height: 371px;
+  position: static;
+}
+.rectangle-73 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 771px;
+  top: 584px;
+}
+.trenton-modular-sofa-3-13 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 761px;
+  top: 631px;
+  object-fit: cover;
+}
+.bottas-1 {
+  width: 206px;
+  height: 206px;
+  position: absolute;
+  left: 1069px;
+  top: 681px;
+  object-fit: cover;
+}
+.group-113 {
+  width: 177px;
+  height: 84px;
+  position: static;
+}
+.charles-leclerc {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 788px;
+  top: 871px;
+}
+._5-000-000-00 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 787px;
+  top: 919px;
+}
+.group-204 {
+  width: 287px;
+  height: 371px;
+  position: static;
+}
+.rectangle-74 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 445px;
+  top: 594px;
+}
+.trenton-modular-sofa-3-14 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 435px;
+  top: 641px;
+  object-fit: cover;
+}
+.lewis-hamilton {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 462px;
+  top: 881px;
+}
+._35-000-000-00 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 461px;
+  top: 929px;
+}
+.group-206 {
+  width: 1265px;
+  height: 391px;
+  position: static;
+}
+.rectangle-75 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 123px;
+  top: 985px;
+}
+.trenton-modular-sofa-3-15 {
+  width: 206px;
+  height: 183px;
+  position: absolute;
+  left: 104px;
+  top: 1069px;
+  object-fit: cover;
+}
+.group-114 {
+  width: 170px;
+  height: 84px;
+  position: static;
+}
+.esteban-ocon {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 140px;
+  top: 1272px;
+}
+._1-000-000-00 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 139px;
+  top: 1320px;
+}
+.rectangle-76 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 1101px;
+  top: 965px;
+}
+.trenton-modular-sofa-3-16 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 1091px;
+  top: 1012px;
+  object-fit: cover;
+}
+.group-115 {
+  width: 141px;
+  height: 84px;
+  position: static;
+}
+.yuki-sunoda {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 1118px;
+  top: 1252px;
+}
+._50-000-00 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 1117px;
+  top: 1300px;
+}
+.rectangle-77 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 775px;
+  top: 975px;
+}
+.trenton-modular-sofa-3-17 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 765px;
+  top: 1022px;
+  object-fit: cover;
+}
+.group-116 {
+  width: 186px;
+  height: 84px;
+  position: static;
+}
+.daniel-ricardo {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 792px;
+  top: 1262px;
+}
+._15-000-000-00 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 791px;
+  top: 1310px;
+}
+.rectangle-78 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 449px;
+  top: 985px;
+}
+.trenton-modular-sofa-3-18 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 439px;
+  top: 1032px;
+  object-fit: cover;
+}
+.carlos-sainz {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 466px;
+  top: 1272px;
+}
+._5-000-000-002 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 465px;
+  top: 1320px;
+}
+.group-207 {
+  width: 1265px;
+  height: 391px;
+  position: static;
+}
+.rectangle-79 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 135px;
+  top: 1413px;
+}
+.trenton-modular-sofa-3-19 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 125px;
+  top: 1460px;
+  object-fit: cover;
+}
+.group-117 {
+  width: 140px;
+  height: 84px;
+  position: static;
+}
+.george-russell {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 152px;
+  top: 1700px;
+}
+._25-000-00 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 151px;
+  top: 1748px;
+}
+.rectangle-710 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 1113px;
+  top: 1393px;
+}
+.trenton-modular-sofa-3-110 {
+  width: 209px;
+  height: 231px;
+  position: absolute;
+  left: 1103px;
+  top: 1463px;
+  object-fit: cover;
+}
+.group-118 {
+  width: 140px;
+  height: 36px;
+  position: static;
+}
+._25-000-002 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 1129px;
+  top: 1728px;
+}
+.rectangle-711 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 787px;
+  top: 1403px;
+}
+.trenton-modular-sofa-3-111 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 777px;
+  top: 1450px;
+  object-fit: cover;
+}
+._25-000-003 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 803px;
+  top: 1738px;
+}
+.rectangle-712 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 461px;
+  top: 1413px;
+}
+.trenton-modular-sofa-3-112 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 451px;
+  top: 1460px;
+  object-fit: cover;
+}
+._25-000-004 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 477px;
+  top: 1748px;
+}
+.group-208 {
+  width: 1265px;
+  height: 391px;
+  position: static;
+}
+.group-210 {
+  width: 1265px;
+  height: 391px;
+  position: static;
+}
+.group-213 {
+  width: 1265px;
+  height: 391px;
+  position: static;
+}
+.group-119 {
+  width: 287px;
+  height: 371px;
+  position: static;
+}
+.group-209 {
+  width: 287px;
+  height: 371px;
+  position: static;
+}
+.rectangle-713 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 115px;
+  top: 1838px;
+}
+.trenton-modular-sofa-3-113 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 105px;
+  top: 1885px;
+  object-fit: cover;
+}
+._25-000-005 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 131px;
+  top: 2173px;
+}
+.group-212 {
+  width: 287px;
+  height: 391px;
+  position: static;
+}
+.group-2022 {
+  width: 287px;
+  height: 391px;
+  position: static;
+}
+.group-642 {
+  width: 287px;
+  height: 391px;
+  position: static;
+}
+.group-1992 {
+  width: 287px;
+  height: 391px;
+  position: static;
+}
+.group-182 {
+  width: 287px;
+  height: 391px;
+  position: static;
+}
+.rectangle-714 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 1093px;
+  top: 1818px;
+}
+.trenton-modular-sofa-3-114 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 1083px;
+  top: 1865px;
+  object-fit: cover;
+}
+._25-000-006 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 1109px;
+  top: 2173px;
+}
+.group-2032 {
+  width: 287px;
+  height: 381px;
+  position: static;
+}
+.group-643 {
+  width: 287px;
+  height: 381px;
+  position: static;
+}
+.group-1993 {
+  width: 287px;
+  height: 381px;
+  position: static;
+}
+.group-183 {
+  width: 287px;
+  height: 381px;
+  position: static;
+}
+.group-1110 {
+  width: 287px;
+  height: 381px;
+  position: static;
+}
+.group-211 {
+  width: 287px;
+  height: 381px;
+  position: static;
+}
+.alexander-albon {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 783px;
+  top: 2115px;
+}
+.rectangle-715 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 767px;
+  top: 1828px;
+}
+.trenton-modular-sofa-3-115 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 755px;
+  top: 1895px;
+  object-fit: cover;
+}
+._25-000-007 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 783px;
+  top: 2173px;
+}
+.rectangle-716 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 287px;
+  height: 287px;
+  position: absolute;
+  left: 442px;
+  top: 1828px;
+}
+.trenton-modular-sofa-3-116 {
+  width: 214px;
+  height: 254.46px;
+  position: absolute;
+  left: 432px;
+  top: 1875px;
+  object-fit: cover;
+}
+._25-000-008 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 458px;
+  top: 2163px;
+}
+.group-72 {
+  width: 392px;
+  height: 60px;
+  position: static;
+}
+.group-68 {
+  width: 60px;
+  height: 60px;
+  position: static;
+}
+.rectangle-23 {
+  background: #fbebb5;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 524px;
+  top: 2311px;
+}
+._1 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 551px;
+  top: 2326px;
+}
+.group-69 {
+  width: 60px;
+  height: 60px;
+  position: static;
+}
+.rectangle-232 {
+  background: #fff9e5;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 622px;
+  top: 2311px;
+}
+._2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 646px;
+  top: 2326px;
+}
+.group-70 {
+  width: 60px;
+  height: 60px;
+  position: static;
+}
+.rectangle-233 {
+  background: #fff9e5;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 720px;
+  top: 2311px;
+}
+._3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 744px;
+  top: 2326px;
+}
+.group-71 {
+  width: 98px;
+  height: 60px;
+  position: static;
+}
+.rectangle-234 {
+  background: #fff9e5;
+  border-radius: 10px;
+  width: 98px;
+  height: 60px;
+  position: absolute;
+  left: 818px;
+  top: 2311px;
+}
+.next {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Light", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  position: absolute;
+  left: 846px;
+  top: 2326px;
+}
+.group-76 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-17 {
+  background: #d4d4d4;
+  width: 1440px;
+  height: 300px;
+  position: absolute;
+  left: 0px;
+  top: 2463px;
+}
+.group-73 {
+  width: 376px;
+  height: 108px;
+  position: static;
+}
+.free-delivery {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  position: absolute;
+  left: 100px;
+  top: 2559px;
+}
+.for-all-oders-over-50-consectetur-adipim-scing-elit {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 100px;
+  top: 2607px;
+  width: 376px;
+}
+.group-74 {
+  width: 376px;
+  height: 108px;
+  position: static;
+}
+._90-days-return {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  position: absolute;
+  left: 524px;
+  top: 2559px;
+}
+.if-goods-have-problems-consectetur-adipim-scing-elit {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 524px;
+  top: 2607px;
+  width: 376px;
+}
+.group-75 {
+  width: 376px;
+  height: 108px;
+  position: static;
+}
+.secure-payment {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  position: absolute;
+  left: 944px;
+  top: 2559px;
+}
+._100-secure-payment-consectetur-adipim-scing-elit {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 944px;
+  top: 2607px;
+  width: 376px;
+}
+.group-46 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-19 {
+  width: 1440px;
+  height: 555px;
+  position: absolute;
+  left: 0px;
+  top: 2748.89px;
+  overflow: visible;
+}
+.group-45 {
+  width: 1240.01px;
+  height: 405px;
+  position: static;
+}
+.group-32 {
+  width: 710px;
+  height: 312px;
+  position: static;
+}
+.group-31 {
+  width: 710px;
+  height: 312px;
+  position: static;
+}
+.group-28 {
+  width: 352px;
+  height: 312px;
+  position: static;
+}
+.group-26 {
+  width: 68px;
+  height: 312px;
+  position: static;
+}
+.group-24 {
+  width: 66px;
+  height: 233px;
+  position: static;
+}
+.home3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 525.01px;
+  top: 2940px;
+}
+.shop5 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 525.01px;
+  top: 3010px;
+}
+.about2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 525.01px;
+  top: 3080px;
+}
+.contact2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 525.01px;
+  top: 3149px;
+}
+.links {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 523.01px;
+  top: 2861px;
+}
+.group-27 {
+  width: 140px;
+  height: 242px;
+  position: static;
+}
+.help {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 735.01px;
+  top: 2861px;
+}
+.group-25 {
+  width: 140px;
+  height: 163px;
+  position: static;
+}
+.payment-options {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 735.01px;
+  top: 2940px;
+}
+.returns {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 735.01px;
+  top: 3010px;
+}
+.privacy-policies {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 735.01px;
+  top: 3079px;
+}
+.group-30 {
+  width: 286px;
+  height: 101px;
+  position: static;
+}
+.newsletter {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 947.01px;
+  top: 2863px;
+}
+.group-29 {
+  width: 286px;
+  height: 24px;
+  position: static;
+}
+.enter-your-email-address {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 947.01px;
+  top: 2940px;
+}
+.line-2 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 200px;
+  height: 0px;
+  position: absolute;
+  left: 947.01px;
+  top: 2964px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.subscribe {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  left: 1158.01px;
+  top: 2940px;
+}
+.line-3 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  width: 75.01px;
+  height: 0px;
+  position: absolute;
+  left: 1158px;
+  top: 2964px;
+}
+.group-44 {
+  width: 1240.01px;
+  height: 45px;
+  position: static;
+}
+.line-4 {
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 1px 0 0 0;
+  width: 1240.01px;
+  height: 0px;
+  position: absolute;
+  left: 100px;
+  top: 3221px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+._2023-24-group-11-all-rights-reverved {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 529px;
+  top: 3242px;
+}
+.rectangle-742 {
+  width: 307px;
+  height: 149px;
+  position: absolute;
+  left: 589px;
+  top: 109px;
+}

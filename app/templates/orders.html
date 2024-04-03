@@ -1,9 +1,53 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/vars_shop.css" />
+    <link rel="stylesheet" href="/static/style_shop.css" />
+
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        appearance: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
 
 {% block title %}
 	Orders - Flask-O-shop
 {% endblock %}
-<script src="https://js.stripe.com/v3/"></script>
+<div class="home" >
+              <a href="{{ url_for('home')}}">Home</a>
+            </div>
+            <div class="shop2">
+                <a href="{{ url_for('shop')}}">Shop</a>
+            </div>
+            <div class="about">
+                <a href="{{ url_for('logout')}}">About</a>
+            </div>
+            <div class="contact">
+                <a href="{{ url_for('cart')}}">Cart</a>
+            </div>
+            <div class="tools">
+                <a href="{{ url_for('login')}}">Account</a>
+            </div>
 {% block content %}
 	{% with msgs =  get_flashed_messages(with_categories=True) %}
 	{% for c, msg in msgs %}

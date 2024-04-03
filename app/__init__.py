@@ -1,4 +1,4 @@
-import os, stripe, json
+import os, json, sqlite3
 from datetime import datetime
 from flask import Flask, render_template, redirect, url_for, flash, request, abort
 from flask_bootstrap import Bootstrap
@@ -10,21 +10,46 @@ from itsdangerous import URLSafeTimedSerializer
 from .funcs import mail, send_confirmation_email, fulfill_order
 from dotenv import load_dotenv
 from .admin.routes import admin
+from sqlite3 import Error
+
+def create_connection():
+	conn = None
+	try:
+		conn = sqlite3.connect('db_file.db')
+		mydb = conn.cursor()
+		print (sqlite3.version)
+	except Error as e:
+		print(e)
+	finally:
+		if conn:
+			
+
+			mydb.execute('''
+				   CREATE TABLE IF NOT EXISTS products
+				   ([product_id] INTEGER PRIMARY KEY, [product_name] TEXT)
+				   ''')
+
+			mydb.execute('''
+				   CREATE TABLE IF NOT EXISTS prices
+				   ([product_id] INTEGER PRIMARY KEY, [price] INTEGER)
+				   ''')
+			#mydb.commit()
+			conn.close()
 
 
 load_dotenv()
 app = Flask(__name__)
 app.register_blueprint(admin)
 
-app.config["SECRET_KEY"] = os.environ["SECRET_KEY"]
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ["DB_URI"]
+app.config["SECRET_KEY"] = os.urandom(12).hex()#os.environ["SECRET_KEY"]
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///mydb.db"#os.environ["DB_URI"]
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['MAIL_USERNAME'] = os.environ["EMAIL"]
-app.config['MAIL_PASSWORD'] = os.environ["PASSWORD"]
-app.config['MAIL_SERVER'] = "smtp.googlemail.com"
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_PORT'] = 587
-stripe.api_key = os.environ["STRIPE_PRIVATE"]
+#app.config['MAIL_USERNAME'] = os.environ["EMAIL"]
+#app.config['MAIL_PASSWORD'] = os.environ["PASSWORD"]
+#app.config['MAIL_SERVER'] = "smtp.googlemail.com"
+#app.config['MAIL_USE_TLS'] = True
+#app.config['MAIL_PORT'] = 587
+#stripe.api_key = os.environ["STRIPE_PRIVATE"]
 
 Bootstrap(app)
 db.init_app(app)
@@ -32,8 +57,13 @@ mail.init_app(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 
+
+
+
 with app.app_context():
 	db.create_all()
+
+create_connection()
 
 @app.context_processor
 def inject_now():
@@ -47,12 +77,27 @@ def load_user(user_id):
 @app.route("/")
 def home():
 	items = Item.query.all()
-	return render_template("home.html", items=items)
+	#return render_template("home.html", items=items)
+	return render_template("index.html")
+	
+@app.route("/shop")
+def shop():
+	items = Item.query.all()
+	return render_template("shop.html", items=items)
+	
+@app.route("/account")
+def account():
+	items = Item.query.all()
+	return render_template("account.html", items=items)
+	
+@app.route("/newdata")
+def form():
+	return render_template("add.html")	
 
 @app.route("/login", methods=['POST', 'GET'])
 def login():
 	if current_user.is_authenticated:
-		return redirect(url_for('home'))
+		return redirect(url_for('account'))
 	form = LoginForm()
 	if form.validate_on_submit():
 		email = form.email.data
@@ -179,16 +224,16 @@ def search():
 	return render_template('home.html', items=items, search=True, query=query)
 
 # stripe stuffs
-@app.route('/payment_success')
-def payment_success():
+#@app.route('/payment_success')
+#def payment_success():
 	return render_template('success.html')
 
-@app.route('/payment_failure')
-def payment_failure():
+#@app.route('/payment_failure')
+#def payment_failure():
 	return render_template('failure.html')
 
-@app.route('/create-checkout-session', methods=['POST'])
-def create_checkout_session():
+#@app.route('/create-checkout-session', methods=['POST'])
+#def create_checkout_session():
 	data = json.loads(request.form['price_ids'].replace("'", '"'))
 	try:
 		checkout_session = stripe.checkout.Session.create(
@@ -205,8 +250,8 @@ def create_checkout_session():
 		return str(e)
 	return redirect(checkout_session.url, code=303)
 
-@app.route('/stripe-webhook', methods=['POST'])
-def stripe_webhook():
+#@app.route('/stripe-webhook', methods=['POST'])
+#def stripe_webhook():
 
 	if request.content_length > 1024*1024:
 		print("Request too big!")

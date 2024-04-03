@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/vars_shop.css" />
+    <link rel="stylesheet" href="/static/style_shop.css" />
+
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        appearance: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+
+{% block title %}
+	Orders - Flask-O-shop
+{% endblock %}
+<div class="home" >
+              <a href="{{ url_for('home')}}">Home</a>
+            </div>
+            <div class="shop2">
+                <a href="{{ url_for('shop')}}">Shop</a>
+            </div>
+            <div class="about">
+                <a href="{{ url_for('logout')}}">About</a>
+            </div>
+            <div class="contact">
+                <a href="{{ url_for('cart')}}">Cart</a>
+            </div>
+            <div class="tools">
+                <a href="{{ url_for('login')}}">Account</a>
+            </div>
+{% block content %}
+	{% with msgs =  get_flashed_messages(with_categories=True) %}
+	{% for c, msg in msgs %}
+		{% if c == 'error' %}
+			<div class="flash-error">
+		{% else %}
+			<div class="success">
+		{% endif %}
+			{{ msg | safe }}</div><br>
+	{% endfor %}
+	{% endwith %}
+
+    {% if not orders %}
+		<div class="flash-error">
+			You haven't placed any orders yet.<br>
+			<a href="{{ url_for('home') }}">Discover new items</a>
+		</div>
+	{% else %}
+
+    <table class="table table-striped">
+        <tr>
+            <th>Order id</th>
+            <th>Order date</th>
+			<th>Ordered items</th>
+			<th>Order status</th>
+        </tr>
+    {% for order in orders %}
+        <tr>
+            <td>{{ order.id }}</td>
+            <td>{{ order.date.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+			<td>
+				{% for i in order.items %}
+					{{ i.item.name }} x <span class="success">{{ i.quantity }}</span><br>
+				{% endfor %}
+			</td>
+			<td>{{ order.status }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+	{% endif %}
+{% endblock %}
