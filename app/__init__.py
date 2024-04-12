@@ -83,12 +83,18 @@ def home():
 @app.route("/shop")
 def shop():
 	items = Item.query.all()
-	return render_template("shop.html", items=items)
-	
+	#return render_template("home.html", items=items)
+	#return render_template("shop.html", items=items)
+	return render_template("shop_index_new.html", items=items)
 @app.route("/account")
 def account():
 	items = Item.query.all()
 	return render_template("account.html", items=items)
+
+@app.route("/contact")
+def contact():
+#	items = Item.query.all()
+	return render_template("contact.html")
 	
 @app.route("/newdata")
 def form():
@@ -189,6 +195,8 @@ def cart():
 	price_ids = []
 	items = []
 	quantity = []
+	total = 0
+	
 	for cart in current_user.cart:
 		items.append(cart.item)
 		quantity.append(cart.quantity)
@@ -198,8 +206,12 @@ def cart():
 			}
 		price_ids.append(price_id_dict)
 		price += cart.item.price*cart.quantity
-	return render_template('cart.html', items=items, price=price, price_ids=price_ids, quantity=quantity)
-
+		
+	for item in items:
+		total += item.price
+	#return render_template('cart_original.html', items=items, price=price, price_ids=price_ids, quantity=quantity)
+	#return render_template('cart.html', items=items, price=price,  quantity=quantity)
+	return render_template('cart_index.html', items=items, price=price,  quantity=quantity, total=total)
 @app.route('/orders')
 @login_required
 def orders():
@@ -214,8 +226,8 @@ def remove(id, quantity):
 @app.route('/item/<int:id>')
 def item(id):
 	item = Item.query.get(id)
-	return render_template('item.html', item=item)
-
+	#return render_template('item.html', item=item)
+	return render_template('item_product.html', item=item)
 @app.route('/search')
 def search():
 	query = request.args['query']

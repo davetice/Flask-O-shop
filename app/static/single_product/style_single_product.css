@@ -1,0 +1,1050 @@
+.single-product,
+.single-product * {
+  box-sizing: border-box;
+}
+.single-product {
+  background: #ffffff;
+  height: 2400px;
+  position: relative;
+  overflow: hidden;
+}
+.group-5 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-2 {
+  background: #d4d4d4;
+  width: 1440px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.group-2 {
+  width: 518px;
+  height: 24px;
+  position: static;
+}
+.home {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 461px;
+  top: 41px;
+}
+.shop {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 584px;
+  top: 41px;
+}
+.about {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 701px;
+  top: 41px;
+}
+.contact {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 825px;
+  top: 41px;
+}
+.tools {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 936px;
+  top: 41px;
+}
+.group-1 {
+  width: 247px;
+  height: 28px;
+  position: absolute;
+  left: 1093px;
+  top: 36px;
+  overflow: visible;
+}
+.group-87 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-20 {
+  background: #ffffff;
+  width: 1440px;
+  height: 100px;
+  position: absolute;
+  left: 0px;
+  top: 114px;
+}
+.group-62 {
+  width: 89px;
+  height: 37px;
+  position: static;
+}
+.group-86 {
+  width: 89px;
+  height: 37px;
+  position: static;
+}
+.line-5 {
+  border-style: solid;
+  border-color: #9f9f9f;
+  border-width: 2px 0 0 0;
+  width: 37px;
+  height: 0px;
+  position: absolute;
+  left: 312px;
+  top: 145px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.drivers {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 346px;
+  top: 151px;
+}
+.group-84 {
+  width: 82px;
+  height: 24px;
+  position: static;
+}
+.home2 {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 99px;
+  top: 152px;
+}
+.dashicons-arrow-up-alt-2 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 181px;
+  top: 154px;
+  transform: translate(-20px, 0px);
+  overflow: visible;
+}
+.group-85 {
+  width: 82px;
+  height: 24px;
+  position: static;
+}
+.shop2 {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 205px;
+  top: 152px;
+}
+.dashicons-arrow-up-alt-22 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 287px;
+  top: 154px;
+  transform: translate(-20px, 0px);
+  overflow: visible;
+}
+.group-104 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-36 {
+  background: #ffffff;
+  width: 1440px;
+  height: 820px;
+  position: absolute;
+  left: 0px;
+  top: 211px;
+}
+.group-103 {
+  width: 1991.01px;
+  height: 1920px;
+  position: static;
+}
+.group-102 {
+  width: 1920px;
+  height: 1920px;
+  position: static;
+}
+.group-99 {
+  width: 76px;
+  height: 416px;
+  position: static;
+}
+.group-94 {
+  width: 76px;
+  height: 80px;
+  position: static;
+}
+.rectangle-37 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 76px;
+  height: 80px;
+  position: absolute;
+  left: 99px;
+  top: 246px;
+}
+.mask-group {
+  width: 76px;
+  height: 80px;
+  position: static;
+}
+.rectangle-45 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 76px;
+  height: 80px;
+  position: absolute;
+  left: 99px;
+  top: 246px;
+}
+.outdoor-sofa-set-2 {
+  width: 83px;
+  height: 71px;
+  position: absolute;
+  left: 95px;
+  top: 246px;
+  object-fit: cover;
+}
+.group-98 {
+  width: 76px;
+  height: 80px;
+  position: static;
+}
+.rectangle-39 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 76px;
+  height: 80px;
+  position: absolute;
+  left: 99px;
+  top: 358px;
+}
+.rectangle-452 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 76px;
+  height: 80px;
+  position: absolute;
+  left: 99px;
+  top: 358px;
+}
+.outdoor-sofa-set-2-1 {
+  width: 86px;
+  height: 77px;
+  position: absolute;
+  left: 94px;
+  top: 358px;
+  object-fit: cover;
+}
+.group-97 {
+  width: 76px;
+  height: 80px;
+  position: static;
+}
+.rectangle-40 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 76px;
+  height: 80px;
+  position: absolute;
+  left: 99px;
+  top: 470px;
+}
+.rectangle-453 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 76px;
+  height: 80px;
+  position: absolute;
+  left: 99px;
+  top: 470px;
+}
+.stuart-sofa-1 {
+  width: 86px;
+  height: 90px;
+  position: absolute;
+  left: 94px;
+  top: 465px;
+  object-fit: cover;
+}
+.group-96 {
+  width: 76px;
+  height: 80px;
+  position: static;
+}
+.rectangle-41 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 76px;
+  height: 80px;
+  position: absolute;
+  left: 99px;
+  top: 582px;
+}
+.rectangle-454 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 76px;
+  height: 80px;
+  position: absolute;
+  left: 99px;
+  top: 582px;
+}
+.maya-sofa-three-seater-1-1 {
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  left: 100px;
+  top: 582px;
+  object-fit: cover;
+}
+.group-95 {
+  width: 1920px;
+  height: 1920px;
+  position: static;
+}
+.rectangle-38 {
+  border-radius: 10px;
+  width: 448px;
+  height: 554px;
+  position: absolute;
+  left: 181px;
+  top: 246px;
+  object-fit: cover;
+}
+.sainz-large-1 {
+  width: 1920px;
+  height: 1920px;
+  position: absolute;
+  left: -651px;
+  top: -490px;
+}
+.asgaard-sofa-3 {
+  width: 468px;
+  height: 554px;
+  position: absolute;
+  left: 161px;
+  top: 246px;
+}
+.group-101 {
+  width: 609.01px;
+  height: 730px;
+  position: static;
+}
+.carlos-sainz-jr {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  position: absolute;
+  left: 735px;
+  top: 246px;
+}
+._500-000-00 {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  position: absolute;
+  left: 735px;
+  top: 309px;
+}
+.line-6 {
+  border-style: solid;
+  border-color: #9f9f9f;
+  border-width: 1px 0 0 0;
+  width: 30px;
+  height: 0px;
+  position: absolute;
+  left: 880px;
+  top: 355px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+._5-customer-review {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  position: absolute;
+  left: 898px;
+  top: 360px;
+}
+.carlos-sainz-is-an-amazing-driver-who-is-hugely-underated {
+  color: #000000;
+  text-align: justified;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  position: absolute;
+  left: 734px;
+  top: 398px;
+  width: 424px;
+  height: 102px;
+}
+.group-93 {
+  width: 123px;
+  height: 64px;
+  position: static;
+}
+.rectangle-455 {
+  background: #ffffff;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #9f9f9f;
+  border-width: 1px;
+  width: 123px;
+  height: 64px;
+  position: absolute;
+  left: 731px;
+  top: 468px;
+}
+.div {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 746px;
+  top: 488px;
+}
+.div2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 831px;
+  top: 488px;
+}
+._1 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 790px;
+  top: 488px;
+}
+.group-21 {
+  width: 215px;
+  height: 64px;
+  position: static;
+}
+.rectangle-12 {
+  border-radius: 15px;
+  width: 215px;
+  height: 64px;
+  position: absolute;
+  left: 861px;
+  top: 459px;
+}
+.add-to-cart {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 909px;
+  top: 476px;
+}
+.line-7 {
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 1px 0 0 0;
+  width: 605.01px;
+  height: 0px;
+  position: absolute;
+  left: 734.99px;
+  top: 800px;
+}
+.sku {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 734px;
+  top: 841px;
+}
+.sainz {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 841px;
+  top: 841px;
+}
+.driver {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 841px;
+  top: 877px;
+}
+.winner {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 841px;
+  top: 913px;
+}
+.group-100 {
+  width: 4px;
+  height: 132px;
+  position: static;
+}
+.div3 {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 825px;
+  top: 841px;
+}
+.div4 {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 825px;
+  top: 877px;
+}
+.div5 {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 825px;
+  top: 913px;
+}
+.div6 {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 825px;
+  top: 949px;
+}
+.category {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 734px;
+  top: 877px;
+}
+.tags {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 734px;
+  top: 913px;
+}
+.share {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 734px;
+  top: 951px;
+}
+.akar-icons-facebook-fill {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 841px;
+  top: 953px;
+  overflow: visible;
+}
+.ant-design-twitter-circle-filled {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 929px;
+  top: 951px;
+  overflow: visible;
+}
+.akar-icons-linkedin-box-fill {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 886px;
+  top: 953px;
+  overflow: visible;
+}
+.group-110 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-49 {
+  background: #ffffff;
+  width: 1440px;
+  height: 761.9px;
+  position: absolute;
+  left: 0px;
+  top: 1013.1px;
+}
+.line-8 {
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 1px 0 0 0;
+  width: 1440px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 1013.1px;
+}
+.group-105 {
+  width: 649px;
+  height: 36.87px;
+  position: static;
+}
+.description {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 396px;
+  top: 1062.25px;
+  width: 136px;
+  height: 36.87px;
+}
+.additional-information {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 585px;
+  top: 1062.25px;
+  width: 269px;
+  height: 36.87px;
+}
+.reviews-5 {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 907px;
+  top: 1062.25px;
+  width: 138px;
+  height: 36.87px;
+}
+.group-109 {
+  width: 605px;
+  height: 356.37px;
+  position: static;
+}
+.group-107 {
+  width: 605px;
+  height: 356.37px;
+  position: static;
+}
+.rectangle-46 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 605px;
+  height: 356.37px;
+  position: absolute;
+  left: 100px;
+  top: 1352.06px;
+}
+.frame-136 {
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 1327px;
+  height: 461px;
+  position: absolute;
+  left: 147px;
+  top: 1499px;
+}
+.tire-house {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  width: 141px;
+  height: 30px;
+}
+.the-carlos-sainz-is-an-5th-year-racer-who-recently-upset-max-verstappen-by-breaking-his-2023-win-streak {
+  color: #9f9f9f;
+  text-align: justified;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  width: 1026px;
+  height: 163px;
+}
+.mask-group2 {
+  flex-shrink: 0;
+  width: 605px;
+  height: 355.94px;
+  position: static;
+}
+.rectangle-48 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 605px;
+  height: 355.94px;
+  position: absolute;
+  left: 0px;
+  top: -265.47px;
+}
+.group-106 {
+  flex-shrink: 0;
+  width: 605px;
+  height: 356.37px;
+  position: static;
+}
+.rectangle-47 {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 605px;
+  height: 356.37px;
+  position: absolute;
+  left: 634px;
+  top: -265.69px;
+}
+.mask-group3 {
+  width: 605px;
+  height: 356.37px;
+  position: static;
+}
+.rectangle-482 {
+  background: #9f9f9f;
+  border-radius: 10px;
+  width: 605px;
+  height: 356.37px;
+  position: absolute;
+  left: 634px;
+  top: -265.69px;
+}
+.cloud-sofa-three-seater-ottoman-1-1 {
+  width: 604px;
+  height: 355.94px;
+  position: absolute;
+  left: 635px;
+  top: -265.69px;
+  object-fit: cover;
+}
+.line-9 {
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 1440px;
+  height: 0px;
+  position: relative;
+}
+.group-46 {
+  flex-shrink: 0;
+  width: 1440px;
+  height: 555px;
+  position: static;
+}
+.rectangle-19 {
+  background: #ffffff;
+  width: 1440px;
+  height: 555px;
+  position: absolute;
+  left: 0px;
+  top: 578.69px;
+}
+.group-45 {
+  width: 1240.01px;
+  height: 400px;
+  position: static;
+}
+.group-32 {
+  width: 710px;
+  height: 312px;
+  position: static;
+}
+.group-31 {
+  width: 710px;
+  height: 312px;
+  position: static;
+}
+.group-28 {
+  width: 352px;
+  height: 312px;
+  position: static;
+}
+.group-26 {
+  width: 68px;
+  height: 312px;
+  position: static;
+}
+.group-24 {
+  width: 66px;
+  height: 233px;
+  position: static;
+}
+.home3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 525.01px;
+  top: 755.69px;
+}
+.shop3 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 525.01px;
+  top: 825.69px;
+}
+.about2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 525.01px;
+  top: 895.69px;
+}
+.contact2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 525.01px;
+  top: 964.69px;
+}
+.links {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 523.01px;
+  top: 676.69px;
+}
+.group-27 {
+  width: 140px;
+  height: 242px;
+  position: static;
+}
+.help {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 735.01px;
+  top: 676.69px;
+}
+.group-25 {
+  width: 140px;
+  height: 163px;
+  position: static;
+}
+.payment-options {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 735.01px;
+  top: 755.69px;
+}
+.returns {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 735.01px;
+  top: 825.69px;
+}
+.privacy-policies {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 735.01px;
+  top: 894.69px;
+}
+.group-30 {
+  width: 286px;
+  height: 101px;
+  position: static;
+}
+.newsletter {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left: 947.01px;
+  top: 678.69px;
+}
+.group-29 {
+  width: 286px;
+  height: 24px;
+  position: static;
+}
+.enter-your-email-address {
+  color: #9f9f9f;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 947.01px;
+  top: 755.69px;
+}
+.line-2 {
+  width: 200px;
+  height: 0px;
+  position: absolute;
+  left: 947.01px;
+  top: 779.69px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.subscribe {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  left: 1158.01px;
+  top: 755.69px;
+}
+.line-3 {
+  width: 75.01px;
+  height: 0px;
+  position: absolute;
+  left: 1158px;
+  top: 779.69px;
+}
+.group-44 {
+  width: 1240.01px;
+  height: 40px;
+  position: static;
+}
+.line-4 {
+  border-style: solid;
+  border-color: #d9d9d9;
+  border-width: 1px 0 0 0;
+  width: 1240.01px;
+  height: 0px;
+  position: absolute;
+  left: 100px;
+  top: 1036.69px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+._2023-24-group-11-all-rights-reverved {
+  color: #000000;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 581px;
+  top: 1052.69px;
+}
+.cloud-sofa-three-seater-ottoman-2-1 {
+  width: 657px;
+  height: 378px;
+  position: absolute;
+  left: 95px;
+  top: 1341px;
+  object-fit: cover;
+}

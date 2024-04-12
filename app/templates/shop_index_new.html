@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_shop.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vars_shop.css') }}">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        appearance: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="shop">
+      <div class="rectangle-2"></div>
+        <div class="group-216">
+            <div class="group-2">
+                <div class="group-215">
+                    <div class="home" >
+                        <a href="{{ url_for('home')}}">Home</a>
+                    </div>
+                    <div class="shop2">
+                        <a href="{{ url_for('shop')}}">Shop</a>
+                    </div>
+                    <div class="about">
+                        <a href="{{ url_for('logout')}}">Logout</a>
+                    </div>
+                    <div class="contact">
+                        <a href="{{ url_for('cart')}}">Cart</a>
+                    </div>
+                    <div class="tools">
+                        <a href="{{ url_for('login')}}">Account</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		        <form class="form-inline my-2 my-lg-0 ml-auto" action="{{ url_for('search') }}">
+		  	     <input class="form-control mr-sm-2" type="search" name="query" placeholder="Search" size="40" required>
+		  	      <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search">
+		         </form>
+		    </div>
+		 </div>   
+            </div>
+        </div>
+        <<svg
+        class="group-1"
+        width="247"
+        height="28"
+        viewBox="0 0 247 28"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        
+        <path
+          d="M97.5 24.5L92.2663 19.257M95.1667 12.25C95.1667 14.8801 94.1219 17.4024 92.2622 19.2622C90.4024 21.1219 87.8801 22.1667 85.25 22.1667C82.6199 22.1667 80.0976 21.1219 78.2379 19.2622C76.3781 17.4024 75.3333 14.8801 75.3333 12.25C75.3333 9.61995 76.3781 7.0976 78.2379 5.23787C80.0976 3.37813 82.6199 2.33334 85.25 2.33334C87.8801 2.33334 90.4024 3.37813 92.2622 5.23787C94.1219 7.0976 95.1667 9.61995 95.1667 12.25V12.25Z"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+      
+      <img class="rectangle-1" src="/static/rectangle-10.png" />
+      <div class="group-55">
+        <div class="shop3">Shop</div>
+      </div>
+      <div class="group-56">
+        <div class="home2">Home</div>
+        <div class="shop4">Shop</div>
+        <svg
+          class="dashicons-arrow-down-alt-2"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M6 15L11 10L6 5L7 3L14 10L7 17L6 15Z" fill="black" />
+        </svg>
+      </div>
+      <div class="rectangle-20"></div>
+      <div class="group-57">
+        <div class="filter">Filter</div>
+        <svg
+          class="system-uicons-filtering"
+          width="25"
+          height="25"
+          viewBox="0 0 25 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M22.0238 7.14286H8.92858M6.54763 7.14286H2.9762M22.0238 19.0476H8.92858M6.54763 19.0476H2.9762M16.0714 13.0952H2.9762M22.0238 13.0952H18.4524M7.7381 4.76191C8.05384 4.76191 8.35664 4.88733 8.5799 5.11059C8.80315 5.33385 8.92858 5.63665 8.92858 5.95238V8.33333C8.92858 8.64907 8.80315 8.95187 8.5799 9.17513C8.35664 9.39838 8.05384 9.52381 7.7381 9.52381C7.42237 9.52381 7.11957 9.39838 6.89631 9.17513C6.67305 8.95187 6.54763 8.64907 6.54763 8.33333V5.95238C6.54763 5.63665 6.67305 5.33385 6.89631 5.11059C7.11957 4.88733 7.42237 4.76191 7.7381 4.76191V4.76191ZM7.7381 16.6667C8.05384 16.6667 8.35664 16.7921 8.5799 17.0153C8.80315 17.2386 8.92858 17.5414 8.92858 17.8571V20.2381C8.92858 20.5538 8.80315 20.8566 8.5799 21.0799C8.35664 21.3031 8.05384 21.4286 7.7381 21.4286C7.42237 21.4286 7.11957 21.3031 6.89631 21.0799C6.67305 20.8566 6.54763 20.5538 6.54763 20.2381V17.8571C6.54763 17.5414 6.67305 17.2386 6.89631 17.0153C7.11957 16.7921 7.42237 16.6667 7.7381 16.6667ZM17.2619 10.7143C17.5776 10.7143 17.8804 10.8397 18.1037 11.063C18.327 11.2862 18.4524 11.589 18.4524 11.9048V14.2857C18.4524 14.6014 18.327 14.9043 18.1037 15.1275C17.8804 15.3508 17.5776 15.4762 17.2619 15.4762C16.9462 15.4762 16.6434 15.3508 16.4201 15.1275C16.1969 14.9043 16.0714 14.6014 16.0714 14.2857V11.9048C16.0714 11.589 16.1969 11.2862 16.4201 11.063C16.6434 10.8397 16.9462 10.7143 17.2619 10.7143V10.7143Z"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <svg
+        class="bi-view-list"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4.5 6.75H19.5C20.2956 6.75 21.0587 7.06607 21.6213 7.62868C22.1839 8.19129 22.5 8.95435 22.5 9.75V14.25C22.5 15.0456 22.1839 15.8087 21.6213 16.3713C21.0587 16.9339 20.2956 17.25 19.5 17.25H4.5C3.70435 17.25 2.94129 16.9339 2.37868 16.3713C1.81607 15.8087 1.5 15.0456 1.5 14.25V9.75C1.5 8.95435 1.81607 8.19129 2.37868 7.62868C2.94129 7.06607 3.70435 6.75 4.5 6.75ZM4.5 8.25C4.10218 8.25 3.72064 8.40804 3.43934 8.68934C3.15804 8.97064 3 9.35218 3 9.75V14.25C3 14.6478 3.15804 15.0294 3.43934 15.3107C3.72064 15.592 4.10218 15.75 4.5 15.75H19.5C19.8978 15.75 20.2794 15.592 20.5607 15.3107C20.842 15.0294 21 14.6478 21 14.25V9.75C21 9.35218 20.842 8.97064 20.5607 8.68934C20.2794 8.40804 19.8978 8.25 19.5 8.25H4.5ZM1.5 3C1.5 2.80109 1.57902 2.61032 1.71967 2.46967C1.86032 2.32902 2.05109 2.25 2.25 2.25H21.75C21.9489 2.25 22.1397 2.32902 22.2803 2.46967C22.421 2.61032 22.5 2.80109 22.5 3C22.5 3.19891 22.421 3.38968 22.2803 3.53033C22.1397 3.67098 21.9489 3.75 21.75 3.75H2.25C2.05109 3.75 1.86032 3.67098 1.71967 3.53033C1.57902 3.38968 1.5 3.19891 1.5 3ZM1.5 21C1.5 20.8011 1.57902 20.6103 1.71967 20.4697C1.86032 20.329 2.05109 20.25 2.25 20.25H21.75C21.9489 20.25 22.1397 20.329 22.2803 20.4697C22.421 20.6103 22.5 20.8011 22.5 21C22.5 21.1989 22.421 21.3897 22.2803 21.5303C22.1397 21.671 21.9489 21.75 21.75 21.75H2.25C2.05109 21.75 1.86032 21.671 1.71967 21.5303C1.57902 21.3897 1.5 21.1989 1.5 21Z"
+          fill="black"
+        />
+      </svg>
+      <svg
+        class="ci-grid-big-round"
+        width="28"
+        height="28"
+        viewBox="0 0 28 28"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.6667 22.1667C17.7385 22.1667 16.8482 21.7979 16.1918 21.1415C15.5355 20.4852 15.1667 19.5949 15.1667 18.6667C15.1667 17.7384 15.5355 16.8482 16.1918 16.1918C16.8482 15.5354 17.7385 15.1667 18.6667 15.1667C19.595 15.1667 20.4852 15.5354 21.1416 16.1918C21.798 16.8482 22.1667 17.7384 22.1667 18.6667C22.1667 19.5949 21.798 20.4852 21.1416 21.1415C20.4852 21.7979 19.595 22.1667 18.6667 22.1667ZM9.33337 22.1667C8.40512 22.1667 7.51488 21.7979 6.8585 21.1415C6.20212 20.4852 5.83337 19.5949 5.83337 18.6667C5.83337 17.7384 6.20212 16.8482 6.8585 16.1918C7.51488 15.5354 8.40512 15.1667 9.33337 15.1667C10.2616 15.1667 11.1519 15.5354 11.8082 16.1918C12.4646 16.8482 12.8334 17.7384 12.8334 18.6667C12.8334 19.5949 12.4646 20.4852 11.8082 21.1415C11.1519 21.7979 10.2616 22.1667 9.33337 22.1667ZM18.6667 12.8333C17.7385 12.8333 16.8482 12.4646 16.1918 11.8082C15.5355 11.1518 15.1667 10.2616 15.1667 9.33333C15.1667 8.40508 15.5355 7.51484 16.1918 6.85846C16.8482 6.20208 17.7385 5.83333 18.6667 5.83333C19.595 5.83333 20.4852 6.20208 21.1416 6.85846C21.798 7.51484 22.1667 8.40508 22.1667 9.33333C22.1667 10.2616 21.798 11.1518 21.1416 11.8082C20.4852 12.4646 19.595 12.8333 18.6667 12.8333ZM9.33337 12.8333C8.40512 12.8333 7.51488 12.4646 6.8585 11.8082C6.20212 11.1518 5.83337 10.2616 5.83337 9.33333C5.83337 8.40508 6.20212 7.51484 6.8585 6.85846C7.51488 6.20208 8.40512 5.83333 9.33337 5.83333C10.2616 5.83333 11.1519 6.20208 11.8082 6.85846C12.4646 7.51484 12.8334 8.40508 12.8334 9.33333C12.8334 10.2616 12.4646 11.1518 11.8082 11.8082C11.1519 12.4646 10.2616 12.8333 9.33337 12.8333Z"
+          fill="black"
+        />
+      </svg>
+      <div class="group-62">
+        <div class="line-5"></div>
+        <div class="showing-1-16-of-32-results">Showing 1–16 of 32 results</div>
+      </div>
+      <div class="group-60">
+        <div class="show">Show</div>
+        <div class="group-58">
+          <div class="rectangle-22"></div>
+          <div class="_16">16</div>
+        </div>
+      </div>
+      <div class="group-61">
+        <div class="short-by">Short by</div>
+        <div class="group-59">
+          <div class="rectangle-21"></div>
+          <div class="default">Default</div>
+        </div>
+      </div>
+      
+      {% block content %}
+	{% with msgs =  get_flashed_messages(with_categories=True) %}
+	{% for c, msg in msgs %}
+		{% if c == 'error' %}
+			<div class="flash-error">
+		{% else %}
+			<div class="success">
+		{% endif %}
+			{{ msg | safe}}</div><br>
+	{% endfor %}
+	{% endwith %}
+
+	{% if search %}
+	<h3>Search results for "{{ query }}":</h3>
+	{% else %}
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3>New Arrivals</h3>
+	<br>
+	<div class="items">
+	{% for item in items[::-1] %}
+	<a href="{{ url_for('item', id=item.id) }}">
+		<div class="item">
+			<div class="item-wrapper">
+				<div class="img-wrapper">
+					<img src="{{ item.image }}" class="pic">
+				</div>
+				{{ item.name }}<br>
+				{{ item.category }}<br>
+				<span class="center-item">${{ item.price }}</span><br>
+					
+					
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+	<br><br><h3>Most Popular</h3>
+	{% endif %}
+	<br>
+	<div class="items">
+	{% for item in items %}
+	<a href="{{ url_for('item', id=item.id) }}">
+		<div class="item">
+			<div class="item-wrapper">
+				<div class="img-wrapper">
+					<img src="{{ item.image }}" class="pic">
+				</div>
+				{{ item.name }}<br>
+				<span class="center-item">${{ item.price }}</span><br>
+					
+					
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+	{% if not items %}
+	<div class="flash-error">
+		No items found.<br>
+		<a href="{{ url_for('home') }}">Discover new items</a>
+	</div>
+	{% endif %}
+{% endblock %}   
+      
+      
+      
+      
+      <!--
+      <div class="group-83">
+        <div class="rectangle-6"></div>
+        <div class="group-77">
+          <div class="group-205">
+            <div class="group-200">
+              <div class="group-201">
+                <div class="group-64">
+                  <div class="group-199">
+                    <div class="group-18">
+                      <div class="mask-group">
+                        <div class="rectangle-7"></div>
+                        <img
+                          class="trenton-modular-sofa-3-1"
+                          src="/static/trenton-modular-sofa-3-10.png"
+                        />
+                      </div>
+                      <div class="group-11">
+                        <div class="max-verstappen-red-bull-racing">
+                          Max Verstappen
+                          <br />
+                          Red Bull Racing
+                        </div>
+                        <div class="_25-000-000-00">$ 25,000,000.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group-202">
+                <div class="group-64">
+                  <div class="group-199">
+                    <div class="group-18">
+                      <div class="mask-group">
+                        <div class="rectangle-72"></div>
+                        <img
+                          class="trenton-modular-sofa-3-12"
+                          src="/static/trenton-modular-sofa-3-11.png"
+                        />
+                      </div>
+                      <div class="group-112">
+                        <div class="oscar-piastri">Oscar Piastri</div>
+                        <div class="_500-000-00">$ 500,000.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group-203">
+                <div class="group-64">
+                  <div class="group-199">
+                    <div class="group-18">
+                      <div class="mask-group">
+                        <div class="rectangle-73"></div>
+                        <img
+                          class="trenton-modular-sofa-3-13"
+                          src="/static/trenton-modular-sofa-3-12.png"
+                        />
+                        <img class="bottas-1" src="/static/bottas-10.png" />
+                      </div>
+                      <div class="group-113">
+                        <div class="charles-leclerc">Charles Leclerc</div>
+                        <div class="_5-000-000-00">$ 5,000,000.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group-204">
+                <div class="group-64">
+                  <div class="group-199">
+                    <div class="group-18">
+                      <div class="mask-group">
+                        <div class="rectangle-74"></div>
+                        <img
+                          class="trenton-modular-sofa-3-14"
+                          src="/static/trenton-modular-sofa-3-13.png"
+                        />
+                      </div>
+                      <div class="group-11">
+                        <div class="lewis-hamilton">Lewis Hamilton</div>
+                        <div class="_35-000-000-00">$ 35,000,000.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-206">
+            <div class="group-200">
+              <div class="group-201">
+                <div class="group-64">
+                  <div class="group-199">
+                    <div class="group-18">
+                      <div class="mask-group">
+                        <div class="rectangle-75"></div>
+                        <img
+                          class="trenton-modular-sofa-3-15"
+                          src="/static/trenton-modular-sofa-3-14.png"
+                        />
+                      </div>
+                      <div class="group-114">
+                        <div class="esteban-ocon">Esteban Ocon</div>
+                        <div class="_1-000-000-00">$ 1,000,000.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group-202">
+                <div class="group-64">
+                  <div class="group-199">
+                    <div class="group-18">
+                      <div class="mask-group">
+                        <div class="rectangle-76"></div>
+                        <img
+                          class="trenton-modular-sofa-3-16"
+                          src="/static/trenton-modular-sofa-3-15.png"
+                        />
+                      </div>
+                      <div class="group-115">
+                        <div class="yuki-sunoda">Yuki Sunoda</div>
+                        <div class="_50-000-00">$ 50,000.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group-203">
+                <div class="group-64">
+                  <div class="group-199">
+                    <div class="group-18">
+                      <div class="mask-group">
+                        <div class="rectangle-77"></div>
+                        <img
+                          class="trenton-modular-sofa-3-17"
+                          src="/static/trenton-modular-sofa-3-16.png"
+                        />
+                      </div>
+                      <div class="group-116">
+                        <div class="daniel-ricardo">Daniel Ricardo</div>
+                        <div class="_15-000-000-00">$ 15,000,000.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group-204">
+                <div class="group-64">
+                  <div class="group-199">
+                    <div class="group-18">
+                      <div class="mask-group">
+                        <div class="rectangle-78"></div>
+                        <img
+                          class="trenton-modular-sofa-3-18"
+                          src="/static/trenton-modular-sofa-3-17.png"
+                        />
+                      </div>
+                      <div class="group-113">
+                        <div class="carlos-sainz">Carlos Sainz</div>
+                        <div class="_5-000-000-002">$ 5,000,000.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-207">
+            <div class="group-200">
+              <div class="group-201">
+                <div class="group-64">
+                  <div class="group-199">
+                    <div class="group-18">
+                      <div class="mask-group">
+                        <div class="rectangle-79"></div>
+                        <img
+                          class="trenton-modular-sofa-3-19"
+                          src="/static/trenton-modular-sofa-3-18.png"
+                        />
+                      </div>
+                      <div class="group-117">
+                        <div class="george-russell">George Russell</div>
+                        <div class="_25-000-00">$ 25,000.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group-202">
+                <div class="group-64">
+                  <div class="group-199">
+                    <div class="group-18">
+                      <div class="mask-group">
+                        <div class="rectangle-710"></div>
+                        <img
+                          class="trenton-modular-sofa-3-110"
+                          src="/static/trenton-modular-sofa-3-19.png"
+                        />
+                      </div>
+                      <div class="group-118">
+                        <div class="_25-000-002">$ 25,000.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group-203">
+                <div class="group-64">
+                  <div class="group-199">
+                    <div class="group-18">
+                      <div class="mask-group">
+                        <div class="rectangle-711"></div>
+                        <img
+                          class="trenton-modular-sofa-3-111"
+                          src="/static/trenton-modular-sofa-3-110.png"
+                        />
+                      </div>
+                      <div class="group-118">
+                        <div class="_25-000-003">$ 25,000.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group-204">
+                <div class="group-64">
+                  <div class="group-199">
+                    <div class="group-18">
+                      <div class="mask-group">
+                        <div class="rectangle-712"></div>
+                        <img
+                          class="trenton-modular-sofa-3-112"
+                          src="/static/trenton-modular-sofa-3-111.png"
+                        />
+                      </div>
+                      <div class="group-118">
+                        <div class="_25-000-004">$ 25,000.00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="group-208">
+            <div class="group-200">
+              <div class="group-210">
+                <div class="group-213">
+                  <div class="group-201">
+                    <div class="group-64">
+                      <div class="group-199">
+                        <div class="group-18">
+                          <div class="group-119">
+                            <div class="group-209">
+                              <div class="mask-group">
+                                <div class="rectangle-713"></div>
+                                <img
+                                  class="trenton-modular-sofa-3-113"
+                                  src="/static/trenton-modular-sofa-3-112.png"
+                                />
+                              </div>
+                              <div class="_25-000-005">$ 25,000.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group-212">
+                    <div class="group-2022">
+                      <div class="group-642">
+                        <div class="group-1992">
+                          <div class="group-182">
+                            <div class="mask-group">
+                              <div class="rectangle-714"></div>
+                              <img
+                                class="trenton-modular-sofa-3-114"
+                                src="/static/trenton-modular-sofa-3-113.png"
+                              />
+                            </div>
+                            <div class="group-118">
+                              <div class="_25-000-006">$ 25,000.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group-2032">
+                    <div class="group-643">
+                      <div class="group-1993">
+                        <div class="group-183">
+                          <div class="group-1110">
+                            <div class="group-211">
+                              <div class="alexander-albon">Alexander Albon</div>
+                              <div class="mask-group">
+                                <div class="rectangle-715"></div>
+                                <img
+                                  class="trenton-modular-sofa-3-115"
+                                  src="/static/trenton-modular-sofa-3-114.png"
+                                />
+                              </div>
+                              <div class="_25-000-007">$ 25,000.00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group-204">
+                    <div class="group-64">
+                      <div class="group-199">
+                        <div class="group-18">
+                          <div class="mask-group">
+                            <div class="rectangle-716"></div>
+                            <img
+                              class="trenton-modular-sofa-3-116"
+                              src="/static/trenton-modular-sofa-3-115.png"
+                            />
+                          </div>
+                          <div class="group-118">
+                            <div class="_25-000-008">$ 25,000.00</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          /-->
+          <div class="group-72">
+            <div class="group-68">
+              <div class="rectangle-23"></div>
+              <div class="_1">1</div>
+            </div>
+            <div class="group-69">
+              <div class="rectangle-232"></div>
+              <div class="_2">2</div>
+            </div>
+            <div class="group-70">
+              <div class="rectangle-233"></div>
+              <div class="_3">3</div>
+            </div>
+            <div class="group-71">
+              <div class="rectangle-234"></div>
+              <div class="next">Next</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-17"></div>
+      <div class="group-73">
+        <div class="free-delivery">Free Delivery</div>
+        <div class="for-all-oders-over-50-consectetur-adipim-scing-elit">
+          For all oders over $50, consectetur adipim scing elit.
+        </div>
+      </div>
+      <div class="group-74">
+        <div class="_90-days-return">90 Days Return</div>
+        <div class="if-goods-have-problems-consectetur-adipim-scing-elit">
+          If goods have problems, consectetur adipim scing elit.
+        </div>
+      </div>
+      <div class="group-75">
+        <div class="secure-payment">Secure Payment</div>
+        <div class="_100-secure-payment-consectetur-adipim-scing-elit">
+          100% secure payment, consectetur adipim scing elit.
+        </div>
+      </div>
+      <svg
+        class="rectangle-19"
+        width="1440"
+        height="556"
+        viewBox="0 0 1440 556"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0 0.892578H1440V555.893H0V0.892578Z" fill="white" />
+      </svg>
+      <div class="group-45">
+        <div class="group-32">
+          <div class="group-31">
+            <div class="group-28">
+              <div class="group-26">
+                <div class="group-24">
+                  <div class="home3">Home</div>
+                  <div class="shop5">Shop</div>
+                  <div class="about2">About</div>
+                  <div class="contact2">Contact</div>
+                </div>
+                <div class="links">Links</div>
+              </div>
+              <div class="group-27">
+                <div class="help">Help</div>
+                <div class="group-25">
+                  <div class="payment-options">Payment Options</div>
+                  <div class="returns">Returns</div>
+                  <div class="privacy-policies">Privacy Policies</div>
+                </div>
+              </div>
+            </div>
+            <div class="group-30">
+              <div class="newsletter">Newsletter</div>
+              <div class="group-29">
+                <div class="enter-your-email-address">
+                  Enter Your Email Address
+                </div>
+                <div class="line-2"></div>
+                <div class="subscribe">SUBSCRIBE</div>
+                <div class="line-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="group-44">
+          <div class="line-4"></div>
+          <div class="_2023-24-group-11-all-rights-reverved">
+            2023-24 Group 11. All rights reverved
+          </div>
+        </div>
+      </div>
+      <div class="rectangle-742"></div>
+    </div>
+  </body>
+</html>

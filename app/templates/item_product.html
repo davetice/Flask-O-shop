@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_shop.css') }}">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    
+
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        appearance: none;
+        background: none;
+
+        -webkit-font-smoothing: antialiased;
+      }
+      
+       .grid-container{
+       display:grid;
+       grid-template-columns: auto auto auto;
+       padding:10px;
+       gap:1000px
+       }
+       .grid-item{
+       padding: 20px;
+       font-size: 50px
+       text-align:center;
+       }
+       
+       #rcorners1{
+       border-radius: 25px;
+       background: #73AD21;
+       padding: 20px;
+       width: 200px;
+       height: 250px;
+       }
+    </style>
+    <title>Document</title>
+    
+    
+  </head>
+  <body>
+    <div class="shop">
+      <div class="rectangle-2"></div>
+        <div class="group-2">
+            <div class="group-214">
+                <div class="home" >
+              <a href="{{ url_for('home')}}">Home</a>
+            </div>
+            <div class="shop2">
+                <a href="{{ url_for('shop')}}">Shop</a>
+            </div>
+            <div class="about">
+                <a href="{{ url_for('logout')}}">Logout</a>
+            </div>
+            <div class="contact">
+                <a href="{{ url_for('cart')}}">Cart</a>
+            </div>
+            <div class="tools">
+                <a href="{{ url_for('login')}}">Account</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <form class="form-inline my-2 my-lg-0 ml-auto" action="{{ url_for('search') }}">
+		  	<input class="form-control mr-sm-2" type="search" name="query" placeholder="Search" size="40" required>
+		  	<input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search">
+		    </form>
+		    </div>
+            </div>
+        </div>
+        <<svg
+        class="group-1"
+        width="247"
+        height="28"
+        viewBox="0 0 247 28"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        
+        <path
+          d="M97.5 24.5L92.2663 19.257M95.1667 12.25C95.1667 14.8801 94.1219 17.4024 92.2622 19.2622C90.4024 21.1219 87.8801 22.1667 85.25 22.1667C82.6199 22.1667 80.0976 21.1219 78.2379 19.2622C76.3781 17.4024 75.3333 14.8801 75.3333 12.25C75.3333 9.61995 76.3781 7.0976 78.2379 5.23787C80.0976 3.37813 82.6199 2.33334 85.25 2.33334C87.8801 2.33334 90.4024 3.37813 92.2622 5.23787C94.1219 7.0976 95.1667 9.61995 95.1667 12.25V12.25Z"
+          stroke="black"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+      
+      
+     
+      <br>
+            <br>
+                  <br> <br>
+            <br>
+                  <br> <br>
+            <br>
+                  <br>
+
+{% block title %}
+	{{ item.name }} - Flask-O-shop
+{% endblock %}
+
+{% block content %}
+	{% with msgs =  get_flashed_messages(with_categories=True) %}
+	{% for c, msg in msgs %}
+		{% if c == 'error' %}
+			<div class="flash-error">
+		{% else %}
+			<div class="success">
+		{% endif %}
+			{{ msg | safe}}</div><br>
+	{% endfor %}
+	{% endwith %}
+
+			<div class="item-display">
+				<div class="img-wrapper">
+					<img src="{{ item.image }}" class="pic">
+				</div>
+				<b>{{ item.name }}</b>
+				<span class="right-item">${{ item.price }}</span><br>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <span class="text-muted" >({{ range(1, 51) | random }})</span>
+                <div class="details">{{ item.details | safe }}</div>
+
+                <form action="{{ url_for('add_to_cart', id=item.id) }}" method="POST">
+                    Quantity: 
+                    <input type="number" value="1" name="quantity" min="1" max="50" onkeyup="if(this.value > 50) this.value=50;" required>
+                    <br><br>
+					<input type="submit" class="add-to-cart" value="Add to Cart" name="add">
+                </form>
+				</a>
+			</div>
+
+{% endblock %}

@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_shop.css') }}">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/vars_shop.css" />
-    <link rel="stylesheet" href="/static/style_shop.css" />
+    
+    
 
     <style>
       a,
@@ -28,34 +35,60 @@
 
         -webkit-font-smoothing: antialiased;
       }
+      
+       .grid-container{
+       display:grid;
+       grid-template-columns: auto auto auto;
+       padding:10px;
+       gap:1000px
+       }
+       .grid-item{
+       padding: 20px;
+       font-size: 50px
+       text-align:center;
+       }
+       
+       #rcorners1{
+       border-radius: 25px;
+       background: #73AD21;
+       padding: 20px;
+       width: 200px;
+       height: 250px;
+       }
     </style>
     <title>Document</title>
+    
+    
   </head>
   <body>
     <div class="shop">
       <div class="rectangle-2"></div>
-      <div class="group-216">
         <div class="group-2">
-          <div class="group-215">
-            <div class="home" >
+            <div class="group-214">
+                <div class="hometopmenu" >
               <a href="{{ url_for('home')}}">Home</a>
             </div>
-            <div class="shop2">
+            <div class="shoptopmenu">
                 <a href="{{ url_for('shop')}}">Shop</a>
             </div>
-            <div class="about">
-                <a href="{{ url_for('logout')}}">About</a>
+            <div class="abouttopmenu">
+                <a href="{{ url_for('logout')}}">Logout</a>
             </div>
-            <div class="contact">
+            <div class="contacttopmenu">
                 <a href="{{ url_for('cart')}}">Cart</a>
             </div>
-            <div class="tools">
+            <div class="toolstopmenu">
                 <a href="{{ url_for('login')}}">Account</a>
             </div>
-          </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <form class="form-inline my-2 my-lg-0 ml-auto" action="{{ url_for('search') }}">
+		  	<input class="form-control mr-sm-2" type="search" name="query" placeholder="Search" size="40" required>
+		  	<input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search">
+		    </form>
+		    </div>
+            </div>
         </div>
-      </div>
-      <svg
+        <<svg
         class="group-1"
         width="247"
         height="28"
@@ -63,92 +96,16 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
+        
         <path
-          d="M23.3334 14V8.16666H25.6667V15.1667H23.3334M23.3334 19.8333H25.6667V17.5H23.3334M11.6667 15.1667C14.7817 15.1667 21 16.73 21 19.8333V23.3333H2.33337V19.8333C2.33337 16.73 8.55171 15.1667 11.6667 15.1667ZM11.6667 4.66666C12.9044 4.66666 14.0914 5.15832 14.9665 6.03349C15.8417 6.90866 16.3334 8.09565 16.3334 9.33332C16.3334 10.571 15.8417 11.758 14.9665 12.6332C14.0914 13.5083 12.9044 14 11.6667 14C10.429 14 9.24205 13.5083 8.36688 12.6332C7.49171 11.758 7.00004 10.571 7.00004 9.33332C7.00004 8.09565 7.49171 6.90866 8.36688 6.03349C9.24205 5.15832 10.429 4.66666 11.6667 4.66666ZM11.6667 17.3833C8.20171 17.3833 4.55004 19.0867 4.55004 19.8333V21.1167H18.7834V19.8333C18.7834 19.0867 15.1317 17.3833 11.6667 17.3833ZM11.6667 6.88332C11.0169 6.88332 10.3938 7.14145 9.9343 7.60091C9.47483 8.06038 9.21671 8.68354 9.21671 9.33332C9.21671 9.9831 9.47483 10.6063 9.9343 11.0657C10.3938 11.5252 11.0169 11.7833 11.6667 11.7833C12.3165 11.7833 12.9397 11.5252 13.3991 11.0657C13.8586 10.6063 14.1167 9.9831 14.1167 9.33332C14.1167 8.68354 13.8586 8.06038 13.3991 7.60091C12.9397 7.14145 12.3165 6.88332 11.6667 6.88332Z"
-          fill="black"
-        />
-        <path
-          d="M97.5 24.5L92.2664 19.257M95.1667 12.25C95.1667 14.8801 94.1219 17.4024 92.2622 19.2622C90.4024 21.1219 87.8801 22.1667 85.25 22.1667C82.62 22.1667 80.0976 21.1219 78.2379 19.2622C76.3782 17.4024 75.3334 14.8801 75.3334 12.25C75.3334 9.61995 76.3782 7.0976 78.2379 5.23787C80.0976 3.37813 82.62 2.33334 85.25 2.33334C87.8801 2.33334 90.4024 3.37813 92.2622 5.23787C94.1219 7.0976 95.1667 9.61995 95.1667 12.25V12.25Z"
+          d="M97.5 24.5L92.2663 19.257M95.1667 12.25C95.1667 14.8801 94.1219 17.4024 92.2622 19.2622C90.4024 21.1219 87.8801 22.1667 85.25 22.1667C82.6199 22.1667 80.0976 21.1219 78.2379 19.2622C76.3781 17.4024 75.3333 14.8801 75.3333 12.25C75.3333 9.61995 76.3781 7.0976 78.2379 5.23787C80.0976 3.37813 82.6199 2.33334 85.25 2.33334C87.8801 2.33334 90.4024 3.37813 92.2622 5.23787C94.1219 7.0976 95.1667 9.61995 95.1667 12.25V12.25Z"
           stroke="black"
           stroke-width="2"
           stroke-linecap="round"
         />
-        <path
-          d="M154.167 3.5C150.945 3.5 148.333 6.08533 148.333 9.275C148.333 11.8498 149.354 17.9608 159.403 24.1383C159.583 24.2479 159.789 24.3058 160 24.3058C160.211 24.3058 160.417 24.2479 160.597 24.1383C170.646 17.9608 171.667 11.8498 171.667 9.275C171.667 6.08533 169.054 3.5 165.833 3.5C162.612 3.5 160 7 160 7C160 7 157.388 3.5 154.167 3.5Z"
-          stroke="black"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M244.235 19.1926H227.952L228.77 17.5273L242.354 17.5027C242.814 17.5027 243.207 17.1746 243.289 16.7207L245.171 6.19062C245.22 5.91445 245.146 5.63008 244.966 5.41406C244.876 5.30775 244.765 5.22211 244.639 5.16309C244.514 5.10407 244.377 5.07308 244.238 5.07227L226.957 5.01484L226.809 4.32031C226.716 3.87734 226.317 3.55469 225.863 3.55469H221.639C221.383 3.55469 221.137 3.65638 220.956 3.8374C220.775 4.01841 220.673 4.26393 220.673 4.51992C220.673 4.77592 220.775 5.02143 220.956 5.20245C221.137 5.38346 221.383 5.48516 221.639 5.48516H225.081L225.726 8.55312L227.315 16.2449L225.27 19.5836C225.164 19.727 225.1 19.8972 225.085 20.075C225.071 20.2528 225.106 20.4312 225.188 20.5898C225.352 20.9152 225.683 21.1203 226.049 21.1203H227.766C227.4 21.6065 227.202 22.1988 227.203 22.8074C227.203 24.3551 228.461 25.6129 230.008 25.6129C231.556 25.6129 232.814 24.3551 232.814 22.8074C232.814 22.1977 232.612 21.6043 232.251 21.1203H236.656C236.29 21.6065 236.092 22.1988 236.092 22.8074C236.092 24.3551 237.35 25.6129 238.898 25.6129C240.446 25.6129 241.703 24.3551 241.703 22.8074C241.703 22.1977 241.501 21.6043 241.14 21.1203H244.238C244.769 21.1203 245.203 20.6883 245.203 20.1551C245.202 19.8994 245.099 19.6546 244.918 19.4743C244.736 19.294 244.491 19.1927 244.235 19.1926ZM227.359 6.91797L243.103 6.96992L241.561 15.6051L229.194 15.627L227.359 6.91797ZM230.008 23.6715C229.533 23.6715 229.144 23.2832 229.144 22.8074C229.144 22.3316 229.533 21.9434 230.008 21.9434C230.484 21.9434 230.873 22.3316 230.873 22.8074C230.873 23.0366 230.782 23.2564 230.619 23.4184C230.457 23.5805 230.238 23.6715 230.008 23.6715ZM238.898 23.6715C238.422 23.6715 238.034 23.2832 238.034 22.8074C238.034 22.3316 238.422 21.9434 238.898 21.9434C239.374 21.9434 239.762 22.3316 239.762 22.8074C239.762 23.0366 239.671 23.2564 239.509 23.4184C239.347 23.5805 239.127 23.6715 238.898 23.6715Z"
-          fill="black"
-        />
       </svg>
-
-      <img class="rectangle-1" src="rectangle-10.png" />
-      <div class="group-55">
-        <div class="shop3">Shop</div>
-      </div>
-      <div class="group-56">
-        <div class="home2">Home</div>
-        <div class="shop4">Shop</div>
-        <svg
-          class="dashicons-arrow-down-alt-2"
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M6 15L11 10L6 5L7 3L14 10L7 17L6 15Z" fill="black" />
-        </svg>
-      </div>
-      <div class="rectangle-20"></div>
-      <div class="group-57">
-        <div class="filter">Filter</div>
-        <svg
-          class="system-uicons-filtering"
-          width="25"
-          height="25"
-          viewBox="0 0 25 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M22.0238 7.14286H8.92858M6.54763 7.14286H2.9762M22.0238 19.0476H8.92858M6.54763 19.0476H2.9762M16.0714 13.0952H2.9762M22.0238 13.0952H18.4524M7.7381 4.76191C8.05384 4.76191 8.35664 4.88733 8.5799 5.11059C8.80315 5.33385 8.92858 5.63665 8.92858 5.95238V8.33333C8.92858 8.64907 8.80315 8.95187 8.5799 9.17513C8.35664 9.39838 8.05384 9.52381 7.7381 9.52381C7.42237 9.52381 7.11957 9.39838 6.89631 9.17513C6.67305 8.95187 6.54763 8.64907 6.54763 8.33333V5.95238C6.54763 5.63665 6.67305 5.33385 6.89631 5.11059C7.11957 4.88733 7.42237 4.76191 7.7381 4.76191V4.76191ZM7.7381 16.6667C8.05384 16.6667 8.35664 16.7921 8.5799 17.0153C8.80315 17.2386 8.92858 17.5414 8.92858 17.8571V20.2381C8.92858 20.5538 8.80315 20.8566 8.5799 21.0799C8.35664 21.3031 8.05384 21.4286 7.7381 21.4286C7.42237 21.4286 7.11957 21.3031 6.89631 21.0799C6.67305 20.8566 6.54763 20.5538 6.54763 20.2381V17.8571C6.54763 17.5414 6.67305 17.2386 6.89631 17.0153C7.11957 16.7921 7.42237 16.6667 7.7381 16.6667ZM17.2619 10.7143C17.5776 10.7143 17.8804 10.8397 18.1037 11.063C18.327 11.2862 18.4524 11.589 18.4524 11.9048V14.2857C18.4524 14.6014 18.327 14.9043 18.1037 15.1275C17.8804 15.3508 17.5776 15.4762 17.2619 15.4762C16.9462 15.4762 16.6434 15.3508 16.4201 15.1275C16.1969 14.9043 16.0714 14.6014 16.0714 14.2857V11.9048C16.0714 11.589 16.1969 11.2862 16.4201 11.063C16.6434 10.8397 16.9462 10.7143 17.2619 10.7143V10.7143Z"
-            stroke="black"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </div>
-      <svg
-        class="bi-view-list"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M4.5 6.75H19.5C20.2956 6.75 21.0587 7.06607 21.6213 7.62868C22.1839 8.19129 22.5 8.95435 22.5 9.75V14.25C22.5 15.0456 22.1839 15.8087 21.6213 16.3713C21.0587 16.9339 20.2956 17.25 19.5 17.25H4.5C3.70435 17.25 2.94129 16.9339 2.37868 16.3713C1.81607 15.8087 1.5 15.0456 1.5 14.25V9.75C1.5 8.95435 1.81607 8.19129 2.37868 7.62868C2.94129 7.06607 3.70435 6.75 4.5 6.75ZM4.5 8.25C4.10218 8.25 3.72064 8.40804 3.43934 8.68934C3.15804 8.97064 3 9.35218 3 9.75V14.25C3 14.6478 3.15804 15.0294 3.43934 15.3107C3.72064 15.592 4.10218 15.75 4.5 15.75H19.5C19.8978 15.75 20.2794 15.592 20.5607 15.3107C20.842 15.0294 21 14.6478 21 14.25V9.75C21 9.35218 20.842 8.97064 20.5607 8.68934C20.2794 8.40804 19.8978 8.25 19.5 8.25H4.5ZM1.5 3C1.5 2.80109 1.57902 2.61032 1.71967 2.46967C1.86032 2.32902 2.05109 2.25 2.25 2.25H21.75C21.9489 2.25 22.1397 2.32902 22.2803 2.46967C22.421 2.61032 22.5 2.80109 22.5 3C22.5 3.19891 22.421 3.38968 22.2803 3.53033C22.1397 3.67098 21.9489 3.75 21.75 3.75H2.25C2.05109 3.75 1.86032 3.67098 1.71967 3.53033C1.57902 3.38968 1.5 3.19891 1.5 3ZM1.5 21C1.5 20.8011 1.57902 20.6103 1.71967 20.4697C1.86032 20.329 2.05109 20.25 2.25 20.25H21.75C21.9489 20.25 22.1397 20.329 22.2803 20.4697C22.421 20.6103 22.5 20.8011 22.5 21C22.5 21.1989 22.421 21.3897 22.2803 21.5303C22.1397 21.671 21.9489 21.75 21.75 21.75H2.25C2.05109 21.75 1.86032 21.671 1.71967 21.5303C1.57902 21.3897 1.5 21.1989 1.5 21Z"
-          fill="black"
-        />
-      </svg>
-      <svg
-        class="ci-grid-big-round"
-        width="28"
-        height="28"
-        viewBox="0 0 28 28"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M18.6667 22.1667C17.7385 22.1667 16.8482 21.7979 16.1918 21.1415C15.5355 20.4852 15.1667 19.5949 15.1667 18.6667C15.1667 17.7384 15.5355 16.8482 16.1918 16.1918C16.8482 15.5354 17.7385 15.1667 18.6667 15.1667C19.595 15.1667 20.4852 15.5354 21.1416 16.1918C21.798 16.8482 22.1667 17.7384 22.1667 18.6667C22.1667 19.5949 21.798 20.4852 21.1416 21.1415C20.4852 21.7979 19.595 22.1667 18.6667 22.1667ZM9.33337 22.1667C8.40512 22.1667 7.51488 21.7979 6.8585 21.1415C6.20212 20.4852 5.83337 19.5949 5.83337 18.6667C5.83337 17.7384 6.20212 16.8482 6.8585 16.1918C7.51488 15.5354 8.40512 15.1667 9.33337 15.1667C10.2616 15.1667 11.1519 15.5354 11.8082 16.1918C12.4646 16.8482 12.8334 17.7384 12.8334 18.6667C12.8334 19.5949 12.4646 20.4852 11.8082 21.1415C11.1519 21.7979 10.2616 22.1667 9.33337 22.1667ZM18.6667 12.8333C17.7385 12.8333 16.8482 12.4646 16.1918 11.8082C15.5355 11.1518 15.1667 10.2616 15.1667 9.33333C15.1667 8.40508 15.5355 7.51484 16.1918 6.85846C16.8482 6.20208 17.7385 5.83333 18.6667 5.83333C19.595 5.83333 20.4852 6.20208 21.1416 6.85846C21.798 7.51484 22.1667 8.40508 22.1667 9.33333C22.1667 10.2616 21.798 11.1518 21.1416 11.8082C20.4852 12.4646 19.595 12.8333 18.6667 12.8333ZM9.33337 12.8333C8.40512 12.8333 7.51488 12.4646 6.8585 11.8082C6.20212 11.1518 5.83337 10.2616 5.83337 9.33333C5.83337 8.40508 6.20212 7.51484 6.8585 6.85846C7.51488 6.20208 8.40512 5.83333 9.33337 5.83333C10.2616 5.83333 11.1519 6.20208 11.8082 6.85846C12.4646 7.51484 12.8334 8.40508 12.8334 9.33333C12.8334 10.2616 12.4646 11.1518 11.8082 11.8082C11.1519 12.4646 10.2616 12.8333 9.33337 12.8333Z"
-          fill="black"
-        />
-      </svg>
+      
+      
       <div class="group-62">
         <div class="line-5"></div>
         <div class="showing-1-16-of-32-results">Showing 1–16 of 32 results</div>
@@ -161,341 +118,83 @@
         </div>
       </div>
       <div class="group-61">
-        <div class="short-by">Short by</div>
+        <div class="short-by">Sort by</div>
         <div class="group-59">
           <div class="rectangle-21"></div>
           <div class="default">Default</div>
         </div>
       </div>
-      <div class="group-83">
-        <div class="rectangle-6"></div>
-        <div class="group-77">
-          <div class="group-205">
-            <div class="group-200">
-              <div class="group-201">
-                <div class="group-64">
-                  <div class="group-199">
-                    <div class="group-18">
-                      <div class="mask-group">
-                        <div class="rectangle-7"></div>
-                        <img
-                          class="trenton-modular-sofa-3-1"
-                          src="/static/verstappen.png"
-                        />
-                      </div>
-                      <div class="group-11">
-                        <div class="max-verstappen-red-bull-racing">
-                          Max Verstappen
-                          <br />
-                          Red Bull Racing
-                        </div>
-                        <div class="_25-000-000-00">$ 25,000,000.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="group-202">
-                <div class="group-64">
-                  <div class="group-199">
-                    <div class="group-18">
-                      <div class="mask-group">
-                        <div class="rectangle-72"></div>
-                          <img class="/static/trenton-modular-sofa-3-13" src="/static/piastri.png"/>
-                        </div>
-                      <div class="group-112">
-                        <div class="oscar-piastri">Oscar Piastri</div>
-                        <div class="_500-000-00">$ 500,000.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="group-203">
-                <div class="group-64">
-                  <div class="group-199">
-                    <div class="group-18">
-                      <div class="mask-group">
-                        <div class="rectangle-73"></div>
-                        <img
-                          class="trenton-modular-sofa-3-13"
-                          src="/static/leclerc.png"
-                        />
-                        <!--<img class="bottas-1" src="leclerc.png" />-->
-                      </div>
-                      <div class="group-113">
-                        <div class="charles-leclerc">Charles Leclerc</div>
-                        <div class="_5-000-000-00">$ 5,000,000.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="group-204">
-                <div class="group-64">
-                  <div class="group-199">
-                    <div class="group-18">
-                      <div class="mask-group">
-                        <div class="rectangle-74"></div>
-                        <img
-                          class="trenton-modular-sofa-3-14"
-                          src="/static/hamilton.png"
-                        />
-                      </div>
-                      <div class="group-11">
-                        <div class="lewis-hamilton">Lewis Hamilton</div>
-                        <div class="_35-000-000-00">$ 35,000,000.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="group-206">
-            <div class="group-200">
-              <div class="group-201">
-                <div class="group-64">
-                  <div class="group-199">
-                    <div class="group-18">
-                      <div class="mask-group">
-                        <div class="rectangle-75"></div>
-                        <img
-                          class="trenton-modular-sofa-3-15"
-                          src="/static/ocon.png"
-                        />
-                      </div>
-                      <div class="group-114">
-                        <div class="esteban-ocon">Esteban Ocon</div>
-                        <div class="_1-000-000-00">$ 1,000,000.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="group-202">
-                <div class="group-64">
-                  <div class="group-199">
-                    <div class="group-18">
-                      <div class="mask-group">
-                        <div class="rectangle-76"></div>
-                        <img
-                          class="trenton-modular-sofa-3-16"
-                          src="/static/tsunoda.png"
-                        />
-                      </div>
-                      <div class="group-115">
-                        <div class="yuki-sunoda">Yuki Sunoda</div>
-                        <div class="_50-000-00">$ 50,000.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="group-203">
-                <div class="group-64">
-                  <div class="group-199">
-                    <div class="group-18">
-                      <div class="mask-group">
-                        <div class="rectangle-77"></div>
-                        <img
-                          class="trenton-modular-sofa-3-17"
-                          src="/static/riccadio.png"
-                        />
-                      </div>
-                      <div class="group-116">
-                        <div class="daniel-ricardo">Daniel Ricardo</div>
-                        <div class="_15-000-000-00">$ 15,000,000.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="group-204">
-                <div class="group-64">
-                  <div class="group-199">
-                    <div class="group-18">
-                      <div class="mask-group">
-                        <div class="rectangle-78"></div>
-                        <img
-                          class="trenton-modular-sofa-3-18"
-                          src="/static/sainz.png"
-                        />
-                      </div>
-                      <div class="group-113">
-                        <div class="carlos-sainz">Carlos Sainz</div>
-                        <div class="_5-000-000-002">$ 5,000,000.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="group-207">
-            <div class="group-200">
-              <div class="group-201">
-                <div class="group-64">
-                  <div class="group-199">
-                    <div class="group-18">
-                      <div class="mask-group">
-                        <div class="rectangle-79"></div>
-                        <img
-                          class="trenton-modular-sofa-3-19"
-                          src="/static/russel.png"
-                        />
-                      </div>
-                      <div class="group-117">
-                        <div class="george-russell">George Russell</div>
-                        <div class="_25-000-00">$ 25,000.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="group-202">
-                <div class="group-64">
-                  <div class="group-199">
-                    <div class="group-18">
-                      <div class="mask-group">
-                        <div class="rectangle-710"></div>
-                        <img
-                          class="trenton-modular-sofa-3-110"
-                          src="/static/norris.png"
-                        />
-                      </div>
-                      <div class="group-118">
-                        <div class="_25-000-002">$ 25,000.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="group-203">
-                <div class="group-64">
-                  <div class="group-199">
-                    <div class="group-18">
-                      <div class="mask-group">
-                        <div class="rectangle-711"></div>
-                        <img
-                          class="trenton-modular-sofa-3-111"
-                          src="/static/hulkenberg.png"
-                        />
-                      </div>
-                      <div class="group-118">
-                        <div class="_25-000-003">$ 25,000.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="group-204">
-                <div class="group-64">
-                  <div class="group-199">
-                    <div class="group-18">
-                      <div class="mask-group">
-                        <div class="rectangle-712"></div>
-                        <img
-                          class="trenton-modular-sofa-3-112"
-                          src="/static/guanyu.png"
-                        />
-                      </div>
-                      <div class="group-118">
-                        <div class="_25-000-004">$ 25,000.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="group-208">
-            <div class="group-200">
-              <div class="group-210">
-                <div class="group-213">
-                  <div class="group-201">
-                    <div class="group-64">
-                      <div class="group-199">
-                        <div class="group-18">
-                          <div class="group-119">
-                            <div class="group-209">
-                              <div class="mask-group">
-                                <div class="rectangle-713"></div>
-                                <img
-                                  class="trenton-modular-sofa-3-113"
-                                  src="/static/magnussen.png"
-                                />
-                              </div>
-                              <div class="_25-000-005">$ 25,000.00</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="group-212">
-                    <div class="group-2022">
-                      <div class="group-642">
-                        <div class="group-1992">
-                          <div class="group-182">
-                            <div class="mask-group">
-                              <div class="rectangle-714"></div>
-                              <img
-                                class="trenton-modular-sofa-3-114"
-                                src="/static/alonso.png"
-                              />
-                            </div>
-                            <div class="group-118">
-                              <div class="_25-000-006">$ 25,000.00</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="group-2032">
-                    <div class="group-643">
-                      <div class="group-1993">
-                        <div class="group-183">
-                          <div class="group-1110">
-                            <div class="group-211">
-                              <div class="alexander-albon">Alexander Albon</div>
-                              <div class="mask-group">
-                                <div class="rectangle-715"></div>
-                                <img
-                                  class="trenton-modular-sofa-3-115"
-                                  src="/static/albon.png"
-                                />
-                              </div>
-                              <div class="_25-000-007">$ 25,000.00</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="group-204">
-                    <div class="group-64">
-                      <div class="group-199">
-                        <div class="group-18">
-                          <div class="mask-group">
-                            <div class="rectangle-716"></div>
-                            <img
-                              class="trenton-modular-sofa-3-116"
-                              src="/static/trenton-modular-sofa-3-115.png"
-                            />
-                          </div>
-                          <div class="group-118">
-                            <div class="_25-000-008">$ 25,000.00</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      
+      <br>
+            <br>
+                  <br> <br>
+            <br>
+                  <br> <br>
+            <br>
+                  <br>
+{% block content %}
+	{% with msgs =  get_flashed_messages(with_categories=True) %}
+	{% for c, msg in msgs %}
+		{% if c == 'error' %}
+			<div class="flash-error">
+		{% else %}
+			<div class="success">
+		{% endif %}
+			{{ msg | safe}}</div><br>
+	{% endfor %}
+	{% endwith %}
+
+	{% if search %}
+	<h3>Search results for "{{ query }}":</h3>
+	{% else %}
+	<h3>New Arrivals</h3>
+	<br>
+	<div class="items">
+	{% for item in items[::-1] %}
+	<a href="{{ url_for('item', id=item.id) }}">
+		<div class="item">
+			<div class="item-wrapper">
+				<div class="img-wrapper">
+					<img src="{{ item.image }}" class="pic">
+				</div>
+				{{ item.name }}<br>
+				<span class="center-item">${{ item.price }}</span><br>
+					
+					
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+	<br><br><h3>Most Popular</h3>
+	{% endif %}
+	<br>
+	<div class="items">
+	{% for item in items %}
+	<a href="{{ url_for('item', id=item.id) }}">
+		<div class="item">
+			<div class="item-wrapper">
+				<div class="img-wrapper">
+					<img src="{{ item.image }}" class="pic">
+				</div>
+				{{ item.name }}<br>
+				<span class="center-item">${{ item.price }}</span><br>
+					
+					
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+	</div>
+
+	{% if not items %}
+	<div class="flash-error">
+		No items found.<br>
+		<a href="{{ url_for('home') }}">Discover new items</a>
+	</div>
+	{% endif %}
+{% endblock %}         
           <div class="group-72">
             <div class="group-68">
               <div class="rectangle-23"></div>
